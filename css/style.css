@@ -185,6 +185,7 @@ a {
 .wrapper {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .modal {
@@ -219,10 +220,10 @@ a {
 .header__burger:after {
   content: "";
   display: block;
-  background-color: #000;
+  background: #2E2E2E;
   border-radius: 50px;
-  width: 26px;
-  height: 4px;
+  width: 16px;
+  height: 3px;
   position: absolute;
   top: 18px;
   right: 0px;
@@ -234,10 +235,10 @@ a {
 .header__burger:before {
   content: "";
   display: block;
-  background-color: #000;
+  background: #2E2E2E;
   border-radius: 50px;
-  width: 26px;
-  height: 4px;
+  width: 20px;
+  height: 3px;
   position: absolute;
   top: 10px;
   right: 0px;
@@ -249,10 +250,10 @@ a {
 .header__burger span:after {
   content: "";
   display: block;
-  background-color: #000;
+  background: #2E2E2E;
   border-radius: 50px;
-  width: 26px;
-  height: 4px;
+  width: 20px;
+  height: 3px;
   position: absolute;
   top: 26px;
   right: 0;
@@ -422,10 +423,16 @@ footer {
   }
 
   .header__main-img {
-    width: calc(70px + 80 * ((100vw - 320px) / 1920));
+    width: calc(90px + 60 * ((100vw - 320px) / 1920));
   }
 
   .header__logo {
     width: calc(80px + 30 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-m {
+    display: none;
   }
 }
