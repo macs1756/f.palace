@@ -1,3 +1,43 @@
+@font-face {
+  font-family: CircularStd;
+  font-display: swap;
+  src: url("../fonts/CircularStd-Book.woff2") format("woff2"), url("../fonts/CircularStd-Book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CircularStd;
+  font-display: swap;
+  src: url("../fonts/CircularStd-Medium.woff2") format("woff2"), url("../fonts/CircularStd-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -13,6 +53,21 @@ header {
 
 .header__scroll {
   background: rgba(255, 148, 1, 0.05);
+}
+
+.header__main-img-wr {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * {
@@ -205,6 +260,90 @@ a {
   width: 110px;
 }
 
+.btn {
+  background: #FF9401;
+  border-radius: 31px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #FFFFFF;
+  padding: 16px 32px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  -webkit-box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.17);
+  box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.17);
+  transition: all ease 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: "";
+  width: 30px;
+  height: 201px;
+  position: absolute;
+  left: -20px;
+  top: 0;
+  margin-top: -20px;
+  background: #fff;
+  opacity: 0.6;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  -webkit-animation: login-blur 3s infinite;
+          animation: login-blur 3s infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+}
+
+@-webkit-keyframes login-blur {
+  from {
+    -webkit-transform: translate(0) rotate(45deg);
+            transform: translate(0) rotate(45deg);
+  }
+
+  to {
+    -webkit-transform: translateX(370px) rotate(45deg);
+            transform: translateX(370px) rotate(45deg);
+  }
+}
+
+@keyframes login-blur {
+  from {
+    -webkit-transform: translate(0) rotate(45deg);
+            transform: translate(0) rotate(45deg);
+  }
+
+  to {
+    -webkit-transform: translateX(370px) rotate(45deg);
+            transform: translateX(370px) rotate(45deg);
+  }
+}
+
+.btn:hover {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+h1,
+h1 span {
+  white-space: nowrap;
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 96px;
+}
+
+h1 img {
+  width: 50px;
+}
+
 .header__burger {
   z-index: 9000;
   position: relative;
@@ -365,44 +504,73 @@ footer {
   height: 100%;
 }
 
-@font-face {
-  font-family: CircularStd;
-  font-display: swap;
-  src: url("../fonts/CircularStd-Book.woff2") format("woff2"), url("../fonts/CircularStd-Book.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+.initial {
+  padding-top: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-@font-face {
-  font-family: CircularStd;
-  font-display: swap;
-  src: url("../fonts/CircularStd-Medium.woff2") format("woff2"), url("../fonts/CircularStd-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Gilroy;
-  font-display: swap;
-  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Gilroy;
-  font-display: swap;
-  src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Gilroy;
-  font-display: swap;
-  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
+.initial label {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FF9401;
   font-weight: 600;
-  font-style: normal;
+  font-family: "Gilroy";
+  font-size: 24px;
+}
+
+.initial label span {
+  width: 25px;
+  height: 2px;
+  display: block;
+  background: #FF9401;
+  border-radius: 0.5px;
+  margin-right: 5px;
+}
+
+.initial p {
+  margin-top: 20px;
+  margin-bottom: 45px;
+  line-height: 160%;
+  color: #3F3232;
+  font-size: 20px;
+}
+
+.initial__text,
+.initial__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding-right: 20px;
+}
+
+h1 span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.initial__title-1 {
+  margin-bottom: 7px;
+}
+
+.initial__social-networks {
+  margin-top: 60px;
 }
 
 @media (max-width: 1920px) {
@@ -429,10 +597,89 @@ footer {
   .header__logo {
     width: calc(80px + 30 * ((100vw - 320px) / 1920));
   }
+
+  h1,
+  h1 span {
+    font-size: calc(45px + 51 * ((100vw - 320px) / 1920));
+  }
+
+  .initial {
+    padding-top: calc(120px + 90 * ((100vw - 320px) / 1920));
+  }
+
+  .initial label {
+    font-size: calc(14px + 10 * ((100vw - 320px) / 1920));
+  }
+
+  .initial p {
+    margin-bottom: calc(20px + 25 * ((100vw - 320px) / 1920));
+  }
+
+  .initial__social-networks {
+    margin-top: calc(20px + 40 * ((100vw - 320px) / 1920));
+  }
+}
+
+@media (max-width: 767px) {
+  .initial {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .initial p {
+    text-align: center;
+  }
+
+  .initial__text,
+  .initial__img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding-right: 0px;
+  }
+
+  .initial__title-2 {
+    display: none;
+  }
+
+  .initial__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 600px) {
   .nav-m {
     display: none;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  h1 img {
+    width: 45px;
+  }
+
+  .initial label {
+    margin-bottom: 10px;
+  }
+
+  .initial label span {
+    width: 16px;
   }
 }
