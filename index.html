@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css?_v=20230208163502">
+	<link rel="stylesheet" href="css/style.css?_v=20230208184639">
 </head>
 <body>
 
@@ -63,7 +63,9 @@
 
 
 		<div class="initial__text">
-			<label><span></span>	Restaurant</label>
+
+			<label id="anim1"><span></span>	Restaurant</label>
+
 			<h1 class="initial__title-1">Good 
 				<span>
 					F
@@ -81,7 +83,7 @@
 				</span>
 			</h1>
 
-			<p>The food palace is an neighborhood restaurent serving seasonal global cuisine driven by the faire.</p>
+			<p id="anim3">The food palace is an neighborhood restaurent serving seasonal global cuisine driven by the faire.</p>
 
 
 			<button class="btn initial__btn modal">Explore food menu</button>
@@ -109,7 +111,16 @@
 
 		<div data-da=".initial__text,767,2" class="initial__img">
 
-			<div class="initial__img-circle"></div>
+			<div class="initial__img-circle">
+				<span></span>
+				<img src="img/initial__dish.png" alt="dish" class="initial__img-main">
+
+				<img src="img/initial__spoiler-1.png" alt="spoiler" class="spoiler-1 modal">
+				<img src="img/initial__spoiler-2.png" alt="spoiler" class="spoiler-2 modal">
+				<img src="img/initial__spoiler-3.png" alt="spoiler" class="spoiler-3 modal">
+
+
+			</div>
 		</div>
 
 	</div>
@@ -134,7 +145,9 @@
 
 
 
-<script src="js/dynamicAdapt.js?_v=20230208163502"></script>
-<script type="module" src="js/app.min.js?_v=20230208163502"></script>
+<script src="js/dynamicAdapt.js?_v=20230208184639"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js?_v=20230208184639"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js?_v=20230208184639"></script>
+<script src="js/app.min.js?_v=20230208184639"></script>
 </body>
 </html>

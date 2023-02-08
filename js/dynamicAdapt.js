@@ -1,79 +1,4 @@
-/******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	// The require scope
-/******/ 	var __webpack_require__ = {};
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-(() => {
-var __webpack_exports__ = {};
-__webpack_require__.r(__webpack_exports__);
-
-let header = document.querySelector("header");
-window.addEventListener("scroll", ()=>{
-	if(scrollY>10){
-		header.classList.add("header__scroll");
-	}else{
-		header.classList.remove("header__scroll");
-	}
-});
-
-
-
-
-
-
-let  controller = new ScrollMagic.Controller();
-
-
-
-let animation1 = new ScrollMagic.Scene({
-	triggerElement: ".initial"
-}).setClassToggle("#anim1", "active").addTo(controller);
-
-
-let animation2 = new ScrollMagic.Scene({
-	triggerElement: ".initial"
-}).setClassToggle(".initial__title-1", "active").addTo(controller);
-
-
-
-let animation3 = new ScrollMagic.Scene({
-	triggerElement: ".initial"
-}).setClassToggle(".initial__title-2", "active").addTo(controller);
-
-
-let animation4 = new ScrollMagic.Scene({
-	triggerElement: ".initial"
-}).setClassToggle("#anim3", "active").addTo(controller);
-
-
-
-
-let animation5 = new ScrollMagic.Scene({
-	triggerElement: ".initial__title-1"
-}).setClassToggle(".initial__btn", "active").addTo(controller);
-
-
-})();
-
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-(() => {
-__webpack_require__.r(__webpack_exports__);
-
+"use strict";
 
 function DynamicAdapt(type) {
 	this.type = type;
@@ -232,7 +157,3 @@ da.init();
 
 
 //для мобаил фирст мыняэм макс и мин мыстями
-})();
-
-/******/ })()
-;
