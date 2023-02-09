@@ -616,7 +616,7 @@ footer {
 }
 
 .initial {
-  padding-top: 150px;
+  padding-top: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,6 +680,7 @@ h1 span {
 
 .initial__title-1 {
   margin-bottom: 7px;
+  line-height: 90%;
 }
 
 .initial__title-2 {
@@ -784,6 +785,12 @@ h1 span {
 .spoiler-3 {
   right: 0;
   top: 71%;
+}
+
+.initial__networks-item {
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 #modal-container {
@@ -996,10 +1003,6 @@ h1 span {
     font-size: calc(45px + 51 * ((100vw - 320px) / 1920));
   }
 
-  .initial {
-    padding-top: calc(120px + 30 * ((100vw - 320px) / 1920));
-  }
-
   .initial label {
     font-size: calc(18px + 6 * ((100vw - 320px) / 1920));
   }
@@ -1088,5 +1091,13 @@ h1 span {
 
   .initial label span {
     width: 16px;
+  }
+}
+
+@media (any-hover: hover) {
+  .initial__networks-item:hover {
+    -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+            transform: scale(1.4);
   }
 }
