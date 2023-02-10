@@ -1246,8 +1246,6 @@ h1 span {
 
 .services h2 {
   margin-bottom: 40px;
-  margin-left: 8%;
-  margin-right: 8%;
 }
 
 .services__net {
@@ -1320,9 +1318,9 @@ h1 span {
   -webkit-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
-  -webkit-transform: translate(-25%, -50%) scale(1.2);
-      -ms-transform: translate(-25%, -50%) scale(1.2);
-          transform: translate(-25%, -50%) scale(1.2);
+  -webkit-transform: translate(-30%, -50%) scale(1.2);
+      -ms-transform: translate(-30%, -50%) scale(1.2);
+          transform: translate(-30%, -50%) scale(1.2);
 }
 
 #anim9 {
@@ -1340,9 +1338,9 @@ h1 span {
 
 #anim8.active {
   opacity: 1;
-  -webkit-transform: scale(1) translate(-25%, -50%);
-      -ms-transform: scale(1) translate(-25%, -50%);
-          transform: scale(1) translate(-25%, -50%);
+  -webkit-transform: scale(1) translate(-30%, -50%);
+      -ms-transform: scale(1) translate(-30%, -50%);
+          transform: scale(1) translate(-30%, -50%);
 }
 
 #anim9.active {
@@ -1454,7 +1452,7 @@ h1 span {
   }
 
   .services h2 {
-    margin-bottom: calc(20px + 20 * ((100vw - 320px) / 1920));
+    margin-bottom: calc(30px + 10 * ((100vw - 320px) / 1920));
   }
 
   .services__net-item .front img {
@@ -1621,6 +1619,7 @@ h1 span {
 
   .services h2 {
     text-align: center;
+    max-width: 300px;
   }
 
   .services label {
@@ -1632,15 +1631,15 @@ h1 span {
   }
 
   #anim8 {
-    -webkit-transform: translate(-50%, -50%) scale(1.2);
-        -ms-transform: translate(-50%, -50%) scale(1.2);
-            transform: translate(-50%, -50%) scale(1.2);
+    -webkit-transform: translate(-30%, -75%) scale(1.2);
+        -ms-transform: translate(-30%, -75%) scale(1.2);
+            transform: translate(-30%, -75%) scale(1.2);
   }
 
   #anim8.active {
-    -webkit-transform: scale(1) translate(-50%, -50%);
-        -ms-transform: scale(1) translate(-50%, -50%);
-            transform: scale(1) translate(-50%, -50%);
+    -webkit-transform: translate(-30%, -75%) scale(1.2);
+        -ms-transform: translate(-30%, -75%) scale(1.2);
+            transform: translate(-30%, -75%) scale(1.2);
   }
 }
 
